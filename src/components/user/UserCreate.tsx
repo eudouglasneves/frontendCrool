@@ -1,4 +1,4 @@
-import { Create, SimpleForm, TextInput, PasswordInput, EmailField } from 'react-admin';
+import { Create, SimpleForm, TextInput, PasswordInput } from 'react-admin';
 import { User } from './UserInterface'
 
 const UserCreate = (props: User) => (

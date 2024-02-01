@@ -1,4 +1,4 @@
-import { Create, SimpleForm, TextInput, PasswordInput, EmailField } from 'react-admin';
+import { Create, SimpleForm, TextInput } from 'react-admin';
 import { Category } from './CategoryInterface'
 
 const CategoryCreate = (props: Category) => (
