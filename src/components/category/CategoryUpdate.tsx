@@ -1,4 +1,4 @@
-import { Edit, SimpleForm, TextInput, PasswordInput } from 'react-admin';
+import { Edit, SimpleForm, TextInput } from 'react-admin';
 import { Category } from './CategoryInterface'
 
 const CategoryUpdate = (props:Category) => (
