@@ -1,6 +1,6 @@
 import simpleRestProvider from 'ra-data-simple-rest';
 
-const apiUrl = 'http://localhost:3000';
+const apiUrl = import.meta.env.VITE_BACKEND_URL;
 
 const dataProvider = simpleRestProvider(apiUrl);
 
