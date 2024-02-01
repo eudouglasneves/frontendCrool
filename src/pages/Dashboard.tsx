@@ -17,7 +17,7 @@ const Dashboard: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const categoriesResponse = await fetch('http://localhost:3000/categories');
+        const categoriesResponse = await fetch(import.meta.env.VITE_BACKEND_URL+'categories');
         const categoriesData: CategoryWithProducts[] = await categoriesResponse.json();
         setCategoriesWithProducts(categoriesData);
       } catch (error) {
