@@ -9,7 +9,7 @@ const ProductCreate = (props: Product) => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const response = await fetch(import.meta.env.VITE_BACKEND_URL+'/category');
+        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/category`);
         const categoriesData = await response.json();
         setCategories(categoriesData);
       } catch (error) {
